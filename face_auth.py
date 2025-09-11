@@ -4,8 +4,6 @@ from pathlib import Path
 import streamlit as st
 import cv2 as cv
 
-path = Path('database.json')
-
 def create_student_img_embedding(image_path):
     embedding_obj = DeepFace.represent(img_path=image_path)
     embedding_values = embedding_obj[0]['embedding']
@@ -16,6 +14,7 @@ def verify_student(embedding_1,embedding_2):
     return result['verified']
 
 def stored_embedding_retrieval(student_id):
+    path = Path('database.json')
     with path.open('r',encoding='utf-8') as f:
         data=json.load(f)
     idx = data["Student_ID"].index(student_id)
@@ -42,4 +41,7 @@ if st.button("Take Selfie"):
                 st.error("Failed to capture image from camera")
             else:
                 frame_rgb = cv.cvtColor(frame, cv.COLOR_BGR2RGB)
-
+                if verify_student(create_student_img_embedding(frame_rgb), stored_embedding_retrieval(student_id)):
+                    print("Face matched")
+                else:
+                    print("Face not recognized")
