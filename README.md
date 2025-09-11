@@ -1,0 +1,1 @@
+This is a project that is being created to be used in a Face-authentication based Attendance system.
