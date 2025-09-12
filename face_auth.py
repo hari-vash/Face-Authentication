@@ -3,17 +3,19 @@ import json
 from pathlib import Path
 import streamlit as st
 import cv2 as cv
-from PIL import Image
+import threading
 
+face_match = False
 
-def create_student_img_embedding(image_path):
-    embedding_obj = DeepFace.represent(img_path=image_path)
-    embedding_values = embedding_obj[0]['embedding']
-    return embedding_values
-
-def verify_student(embedding_1,embedding_2):
-    result = DeepFace.verify(img1_path=embedding_1,img2_path=embedding_2)
-    return result['verified']
+def check_face(frame,img_embedding,):
+    global face_match
+    try:
+        if DeepFace.verify(frame,img_embedding.copy())['verified']:
+            face_match = True
+        else:
+            face_match = False
+    except ValueError:
+        face_match = False
 
 def stored_embedding_retrieval(student_id):
     path = Path('database.json')
@@ -26,33 +28,40 @@ def stored_embedding_retrieval(student_id):
 st.set_page_config(page_title="Verify Student")
 st.title("Verify Student - Capture Selfie")
 st.write("Enter the Student ID and capture a selfie using your webcam.")
-frame_placeholder = st.empty()
 
+counter = 0
 
 student_id = st.text_input("Enter your Student ID")
 
-cap = cv.VideoCapture(0)
-if not cap.isOpened():
-    st.error("Could not open webcam. Make sure your camera is available and not used by another app.")
-else:
-    while True:
-        ret, frame = cap.read()
-        if not ret:
-            st.error("Failed to read frame from camera.")
-            break
-        frame_rgb = cv.cvtColor(frame, cv.COLOR_BGR2RGB)
-        frame_placeholder.image(frame_rgb, channels="RGB")
-        
-        selfie_button = st.button("Take Selfie",key=None) 
-        
-        if selfie_button:
-            if student_id is None:
-                st.warning("Please provide a Student ID")
-            else:
-                cap.release()
-                if verify_student(create_student_img_embedding(frame_rgb), stored_embedding_retrieval(student_id)):
-                    st.success("Face matched")
-                else:
-                    st.error("Face not recognized")
+mark_attendance_btn = st.button("Mark Attendance")
+
+if mark_attendance_btn:
+    if student_id is None:
+        st.warning("Please provide a Student ID")
+    else:
+        frame_placeholder = st.empty()
+        cap = cv.VideoCapture(0, cv.CAP_DSHOW)        
+        if not cap.isOpened():
+            st.error("Could not open webcam. Make sure your camera is available and not used by another app.")
+        else:
+            while True:
+                ret, frame = cap.read()
+                if ret:
+                    frame_placeholder.image(cv.cvtColor(frame,cv.COLOR_BGR2RGB)) 
+                    if counter%30 == 0:
+                        try:
+                            retrieved_embedding = stored_embedding_retrieval(student_id)
+                            threading.Thread(target=check_face, args=(frame.copy(),retrieved_embedding.copy())).start()
+                        except ValueError:
+                            pass
+                    counter+=1
+                    if face_match:
+                        cv.putText(frame, "MATCH!", (20, 450), cv.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 0), 3)
+                        st.success("Face Matched")
+                        cap.release()
+                        frame_placeholder.empty()
+                    else:
+                        cv.putText(frame, "NO MATCH!", (20, 450), cv.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 255), 3)
+                    
                     
                     
