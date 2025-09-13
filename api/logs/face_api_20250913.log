@@ -1,0 +1,101 @@
+2025-09-13 13:11:03,134 - tensorflow - WARNING - From C:\Users\haria\OneDrive\Desktop\My Folder\Projects\Face-Authentication\.venv\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-13 13:11:04,495 - logger.logger - INFO - Starting Face Recognition API application
+2025-09-13 13:11:04,495 - logger.logger - INFO - Initializing DeepFace models...
+2025-09-13 13:11:26,143 - logger.logger - INFO - DeepFace models loaded successfully
+2025-09-13 13:11:26,143 - logger.logger - INFO - Application startup completed successfully
+2025-09-13 13:14:10,541 - logger.logger - INFO - Request 7bffb0b4-9606-4ef8-a9a4-8ef8f1ce1c10: GET http://10.93.126.160:8000/docs
+2025-09-13 13:14:10,542 - logger.logger - INFO - Request 7bffb0b4-9606-4ef8-a9a4-8ef8f1ce1c10 completed in 0.002s - Status: 200
+2025-09-13 13:14:12,206 - logger.logger - INFO - Request 4bbe86a7-df77-43c2-a57f-d6c43e244411: GET http://10.93.126.160:8000/openapi.json
+2025-09-13 13:14:12,263 - logger.logger - INFO - Request 4bbe86a7-df77-43c2-a57f-d6c43e244411 completed in 0.057s - Status: 200
+2025-09-13 13:19:27,650 - logger.logger - INFO - Request 461dd0f2-fa8f-4748-830e-a198a7646439: POST http://10.93.126.160:8000/verification/verify
+2025-09-13 13:19:27,665 - logger.logger - INFO - Starting face verification for SID: SID_1
+2025-09-13 13:19:27,666 - logger.logger - ERROR - HTTP Exception: 400 - Invalid stored_embedding format: Extra data: line 1 column 2 (char 1)
+2025-09-13 13:19:27,667 - logger.logger - INFO - Request 461dd0f2-fa8f-4748-830e-a198a7646439 completed in 0.017s - Status: 400
+2025-09-13 13:24:50,070 - logger.logger - INFO - Shutting down Face Recognition API application
+2025-09-13 13:25:00,253 - tensorflow - WARNING - From C:\Users\haria\OneDrive\Desktop\My Folder\Projects\Face-Authentication\.venv\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-13 13:25:01,157 - logger.logger - INFO - Starting Face Recognition API application
+2025-09-13 13:25:01,157 - logger.logger - INFO - Initializing DeepFace models...
+2025-09-13 13:25:06,973 - logger.logger - INFO - DeepFace models loaded successfully
+2025-09-13 13:25:06,973 - logger.logger - INFO - Application startup completed successfully
+2025-09-13 13:25:26,427 - logger.logger - INFO - Shutting down Face Recognition API application
+2025-09-13 13:25:36,225 - tensorflow - WARNING - From C:\Users\haria\OneDrive\Desktop\My Folder\Projects\Face-Authentication\.venv\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-13 13:25:37,156 - logger.logger - INFO - Starting Face Recognition API application
+2025-09-13 13:25:37,157 - logger.logger - INFO - Initializing DeepFace models...
+2025-09-13 13:25:42,837 - logger.logger - INFO - DeepFace models loaded successfully
+2025-09-13 13:25:42,838 - logger.logger - INFO - Application startup completed successfully
+2025-09-13 13:25:42,847 - logger.logger - INFO - Request ce73f43f-f1f5-4502-b606-0f03ff412360: POST http://10.93.126.160:8000/verification/verify
+2025-09-13 13:25:42,849 - logger.logger - INFO - Starting face verification for SID: SID_1
+2025-09-13 13:25:42,850 - logger.logger - ERROR - HTTP Exception: 400 - Invalid stored_embedding format: Extra data: line 1 column 2 (char 1)
+2025-09-13 13:25:42,851 - logger.logger - INFO - Request ce73f43f-f1f5-4502-b606-0f03ff412360 completed in 0.004s - Status: 400
+2025-09-13 13:26:19,127 - logger.logger - INFO - Request 65ff002c-5478-4ce7-8b3e-fbf372b0f878: POST http://10.93.126.160:8000/verification/verify
+2025-09-13 13:26:19,130 - logger.logger - INFO - Request 65ff002c-5478-4ce7-8b3e-fbf372b0f878 completed in 0.003s - Status: 422
+2025-09-13 13:29:07,198 - logger.logger - INFO - Request 9c3573b3-541b-45b6-9a78-1a13330d99ee: POST http://10.93.126.160:8000/verification/verify
+2025-09-13 13:29:07,201 - logger.logger - INFO - Request 9c3573b3-541b-45b6-9a78-1a13330d99ee completed in 0.002s - Status: 422
+2025-09-13 13:35:26,690 - logger.logger - INFO - Shutting down Face Recognition API application
+2025-09-13 13:35:37,113 - tensorflow - WARNING - From C:\Users\haria\OneDrive\Desktop\My Folder\Projects\Face-Authentication\.venv\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-13 13:35:38,101 - logger.logger - INFO - Starting Face Recognition API application
+2025-09-13 13:35:38,101 - logger.logger - INFO - Initializing DeepFace models...
+2025-09-13 13:35:44,552 - logger.logger - INFO - DeepFace models loaded successfully
+2025-09-13 13:35:44,552 - logger.logger - INFO - Application startup completed successfully
+2025-09-13 13:35:44,562 - logger.logger - INFO - Request 6009ef36-f838-45ba-beb5-a6ad5623a179: POST http://10.93.126.160:8000/verification/verify
+2025-09-13 13:35:44,565 - logger.logger - INFO - Request 6009ef36-f838-45ba-beb5-a6ad5623a179 completed in 0.004s - Status: 422
+2025-09-13 13:53:30,465 - logger.logger - INFO - Shutting down Face Recognition API application
+2025-09-13 13:54:14,604 - tensorflow - WARNING - From C:\Users\haria\OneDrive\Desktop\My Folder\Projects\Face-Authentication\.venv\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-13 13:54:15,578 - logger.logger - INFO - Starting Face Recognition API application
+2025-09-13 13:54:15,579 - logger.logger - INFO - Initializing DeepFace models...
+2025-09-13 13:54:22,273 - logger.logger - INFO - DeepFace models loaded successfully
+2025-09-13 13:54:22,274 - logger.logger - INFO - Application startup completed successfully
+2025-09-13 13:54:30,818 - logger.logger - INFO - Request 368bca35-f589-48f0-ab3d-2ad5c29ee514: POST http://10.93.126.160:8000/verification/verify
+2025-09-13 13:54:30,828 - logger.logger - INFO - Starting face verification for SID: SID_1
+2025-09-13 13:54:30,828 - logger.logger - INFO - Received file: Hariansh_2025.jpg, Content-Type: image/jpeg
+2025-09-13 13:54:30,922 - logger.logger - INFO - Image preprocessed successfully. Shape: (531, 413, 3)
+2025-09-13 13:54:31,464 - logger.logger - INFO - Successfully generated embedding for SID: SID_1
+2025-09-13 13:54:31,466 - logger.logger - ERROR - Error calculating similarity: shapes (4096,) and (128,) not aligned: 4096 (dim 0) != 128 (dim 0)
+2025-09-13 13:54:31,466 - logger.logger - INFO - Face verification completed for SID SID_1: False
+2025-09-13 13:54:31,467 - logger.logger - INFO - Request 368bca35-f589-48f0-ab3d-2ad5c29ee514 completed in 0.649s - Status: 200
+2025-09-13 13:54:55,012 - logger.logger - INFO - Request fdcd7db4-b808-4fc5-8090-452f253f6fce: POST http://10.93.126.160:8000/verification/verify
+2025-09-13 13:54:55,015 - logger.logger - INFO - Starting face verification for SID: SID_1
+2025-09-13 13:54:55,015 - logger.logger - INFO - Received file: Hariansh_2025.jpg, Content-Type: image/jpeg
+2025-09-13 13:54:55,022 - logger.logger - INFO - Image preprocessed successfully. Shape: (531, 413, 3)
+2025-09-13 13:54:55,552 - logger.logger - INFO - Successfully generated embedding for SID: SID_1
+2025-09-13 13:54:55,552 - logger.logger - ERROR - Error calculating similarity: shapes (4096,) and (128,) not aligned: 4096 (dim 0) != 128 (dim 0)
+2025-09-13 13:54:55,553 - logger.logger - INFO - Face verification completed for SID SID_1: False
+2025-09-13 13:54:55,553 - logger.logger - INFO - Request fdcd7db4-b808-4fc5-8090-452f253f6fce completed in 0.541s - Status: 200
+2025-09-13 13:59:07,794 - logger.logger - INFO - Request 42282261-86f9-408a-a439-1c5004f7b908: POST http://10.93.126.160:8000/verification/verify
+2025-09-13 13:59:07,797 - logger.logger - INFO - Starting face verification for SID: SID_1
+2025-09-13 13:59:07,797 - logger.logger - INFO - Received file: Hariansh_2025.jpg, Content-Type: image/jpeg
+2025-09-13 13:59:07,799 - logger.logger - ERROR - HTTP Exception: 400 - Invalid stored_embedding format. Please provide either a JSON array [1,2,3] or comma-separated values 1,2,3. Error: Expecting value: line 1 column 25600 (char 25599)
+2025-09-13 13:59:07,801 - logger.logger - INFO - Request 42282261-86f9-408a-a439-1c5004f7b908 completed in 0.006s - Status: 400
+2025-09-13 14:02:52,376 - logger.logger - INFO - Request 40360e0f-50fb-491c-b76e-ad5a62ef1588: POST http://10.93.126.160:8000/verification/verify
+2025-09-13 14:02:52,378 - logger.logger - INFO - Starting face verification for SID: SID_1
+2025-09-13 14:02:52,378 - logger.logger - INFO - Received file: Hariansh_2025.jpg, Content-Type: image/jpeg
+2025-09-13 14:02:52,380 - logger.logger - ERROR - HTTP Exception: 400 - Invalid stored_embedding format. Please provide either a JSON array [1,2,3] or comma-separated values 1,2,3. Error: Expecting value: line 1 column 25600 (char 25599)
+2025-09-13 14:02:52,388 - logger.logger - INFO - Request 40360e0f-50fb-491c-b76e-ad5a62ef1588 completed in 0.013s - Status: 400
+2025-09-13 14:08:53,807 - logger.logger - INFO - Request e0cb3d1b-c9b0-4f72-b070-a5a132e64a3f: POST http://10.93.126.160:8000/verification/verify
+2025-09-13 14:08:53,810 - logger.logger - INFO - Starting face verification for SID: SID_1
+2025-09-13 14:08:53,810 - logger.logger - INFO - Received file: Hariansh_2025.jpg, Content-Type: image/jpeg
+2025-09-13 14:08:53,838 - logger.logger - INFO - Image preprocessed successfully. Shape: (531, 413, 3)
+2025-09-13 14:08:54,764 - logger.logger - INFO - Successfully generated embedding for SID: SID_1
+2025-09-13 14:08:54,765 - logger.logger - ERROR - Error calculating similarity: shapes (4096,) and (128,) not aligned: 4096 (dim 0) != 128 (dim 0)
+2025-09-13 14:08:54,765 - logger.logger - INFO - Face verification completed for SID SID_1: False
+2025-09-13 14:08:54,766 - logger.logger - INFO - Request e0cb3d1b-c9b0-4f72-b070-a5a132e64a3f completed in 0.960s - Status: 200
+2025-09-13 14:10:24,366 - logger.logger - INFO - Shutting down Face Recognition API application
+2025-09-13 14:10:42,785 - tensorflow - WARNING - From C:\Users\haria\OneDrive\Desktop\My Folder\Projects\Face-Authentication\.venv\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-09-13 14:10:44,702 - logger.logger - INFO - Starting Face Recognition API application
+2025-09-13 14:10:44,703 - logger.logger - INFO - Initializing DeepFace models...
+2025-09-13 14:10:55,330 - logger.logger - INFO - DeepFace models loaded successfully
+2025-09-13 14:10:55,331 - logger.logger - INFO - Application startup completed successfully
+2025-09-13 14:10:55,360 - logger.logger - INFO - Request f3d0aeea-9b87-4c53-9643-a9bf73152ece: POST http://10.93.126.160:8000/verification/verify
+2025-09-13 14:10:55,371 - logger.logger - INFO - Starting face verification for SID: SID_1
+2025-09-13 14:10:55,372 - logger.logger - INFO - Received file: Hariansh_2025.jpg, Content-Type: image/jpeg
+2025-09-13 14:10:55,416 - logger.logger - INFO - Image preprocessed successfully. Shape: (531, 413, 3)
+2025-09-13 14:10:59,203 - logger.logger - INFO - Successfully generated embedding for SID: SID_1
+2025-09-13 14:10:59,205 - logger.logger - INFO - Face verification completed for SID SID_1: True
+2025-09-13 14:10:59,206 - logger.logger - INFO - Request f3d0aeea-9b87-4c53-9643-a9bf73152ece completed in 3.847s - Status: 200
+2025-09-13 14:15:43,962 - logger.logger - INFO - Shutting down Face Recognition API application
